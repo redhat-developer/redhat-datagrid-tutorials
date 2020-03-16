@@ -9,8 +9,6 @@ import org.infinispan.client.hotrod.multimap.RemoteMultimapCacheManagerFactory;
 
 /**
  * The Remote Multimap simple tutorial.
- * <p>
- * The remote multimap are available in Infinispan since version 9.2
  *
  * @author Katia Aresti, karesti@redhat.com
  */

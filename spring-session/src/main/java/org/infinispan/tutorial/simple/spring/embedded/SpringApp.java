@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * This tutorial shows how to run Spring Session with Infinispan and Spring Boot.
+ * This tutorial shows how to run Spring Session with Red Hat Datagrid and Spring Boot.
  */
 @SpringBootApplication
 @EnableInfinispanEmbeddedHttpSession

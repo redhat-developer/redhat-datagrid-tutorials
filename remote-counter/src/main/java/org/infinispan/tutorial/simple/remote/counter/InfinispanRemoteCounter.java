@@ -12,8 +12,6 @@ import org.infinispan.counter.api.WeakCounter;
 
 /**
  * The Remote Counter simple tutorial.
- * <p>
- * The remote counters are available in Infinispan since version 9.2
  *
  * @author Pedro Ruivo
  */

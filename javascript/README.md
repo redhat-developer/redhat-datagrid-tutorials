@@ -1,7 +1,7 @@
 # Build requirements
 
 * Node.js
-* Infinispan Server 10.1.x or higher 
+* Red Hat Datagrid 8 Server
 
 # Build instructions
 
@@ -9,7 +9,7 @@
 
 # Run instructions 
 
-* Start Infinispan server calling `./bin/server.sh` (Linux, OS X, Unix) or 
+* Start the server calling `./bin/server.sh` (Linux, OS X, Unix) or 
 `bin/server.bat` (Windows).
 
 * Create a cache using the REST interface

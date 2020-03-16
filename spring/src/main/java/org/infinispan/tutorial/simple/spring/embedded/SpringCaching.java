@@ -40,7 +40,7 @@ public class SpringCaching {
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
-            return "Spring and Infinispan will speed this one up!";
+            return "Spring and Red Hat Datagrid will speed this one up!";
         }
     }
 

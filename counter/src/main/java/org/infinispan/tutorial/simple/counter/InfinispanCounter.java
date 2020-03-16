@@ -10,8 +10,6 @@ import org.infinispan.manager.DefaultCacheManager;
 
 /**
  * The Counter simple tutorial.
- * <p>
- * The counters are available in Infinispan since version 9.1
  *
  * @author Pedro Ruivo
  */

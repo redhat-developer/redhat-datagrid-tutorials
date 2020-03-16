@@ -12,8 +12,6 @@ import org.infinispan.commons.configuration.XMLStringConfiguration;
 
 /**
  * The Hot Rod transaction simple tutorial.
- * <p>
- * The Hot Rod transactions are available in Infinispan since version 9.3
  *
  * @author Pedro Ruivo
  */

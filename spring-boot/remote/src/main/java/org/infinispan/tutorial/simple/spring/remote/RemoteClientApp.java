@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
 
 /**
- * This example shows how to configure Spring Boot and Infinispan Server
+ * This example shows how to configure Spring Boot and Red Hat Datagrid Server
  */
 @SpringBootApplication
 public class RemoteClientApp {

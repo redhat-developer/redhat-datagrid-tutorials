@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * This example shows how to configure Spring's {@link CacheManager} with Infinispan implementation.
+ * This example shows how to configure Spring's {@link CacheManager} with Red Hat Datagrid implementation.
  */
 public class SpringAnnotationConfiguration {
 

@@ -18,7 +18,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 /**
- * This example shows how to configure Spring Boot and Infinispan
+ * This example shows how to configure Spring Boot and Red Hat Datagrid
  *
  * <p>It is recommended to use <code>-Djava.net.preferIPv4Stack=true</code> for running multiple instances</p>
  */
