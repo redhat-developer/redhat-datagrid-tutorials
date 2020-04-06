@@ -1,0 +1,27 @@
+= Hot Rod Secured Tutorial
+
+**Summary:** Use Hot Rod clients with authentication.
+
+**Instructions:**
+
+* Add authentication to the `<hotrod-connector>` in `server/conf/infinispan.xml`:
++
+----
+<hotrod-connector name="hotrod">
+    <authentication>
+        <sasl mechanisms='SCRAM-SHA-512 SCRAM-SHA-384 SCRAM-SHA-256 SCRAM-SHA-1 DIGEST-SHA-512 DIGEST-SHA-384 DIGEST-SHA-256 DIGEST-SHA DIGEST-MD5 PLAIN' qop='auth' server-name='infinispan'/>
+    </authentication>
+</hotrod-connector>
+----
+
+* Create a username and password using `user-tool.sh`:
++
+----
+./bin/user-tool.sh -u "Titus Bramble" -p "Shambles"
+----
+
+* Finally, start the server
++
+----
+./bin/server.sh
+----
