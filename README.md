@@ -14,8 +14,10 @@ You can compile and run each individual tutorial by changing to its folder
 and invoking:
 
 ```bash
-mvn clean package
-mvn exec:exec
+mvn -s /path/to/maven-settings.xml clean package
+mvn -s /path/to/maven-settings.xml exec:exec
 ```
+
+Note: `maven-settings.xml` can be found in the root of the repository.
 
 Then, check the tutorial for a particular URL to interact with.

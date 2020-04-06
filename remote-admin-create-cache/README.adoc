@@ -17,7 +17,7 @@ on Infinispan servers.
 . Build and run the Hot Rod Java client:
 +
 ----
-$ mvn clean package
+$ mvn -s ../maven-settings.xml clean package
 
-$ mvn exec:exec
+$ mvn -s ../maven-settings.xml exec:exec
 ----
