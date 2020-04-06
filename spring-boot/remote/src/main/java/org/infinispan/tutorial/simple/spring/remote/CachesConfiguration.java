@@ -12,7 +12,7 @@ public class CachesConfiguration {
    @Bean
    @Qualifier("defaultCache")
    public RemoteCache<String, String> defaultCache(RemoteCacheManager cacheManager) {
-      return cacheManager.getCache("default");
+      return cacheManager.administration().getOrCreateCache("default", "org.infinispan.DIST_SYNC");
    }
 
 }
