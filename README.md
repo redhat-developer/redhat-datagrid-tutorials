@@ -1,23 +1,25 @@
-# Red Hat Datagrid 8 Simple Tutorials
+# Red Hat Data Grid 8 Simple Tutorials
 
-This is a collection of simple tutorials that explain how to use certain
-features of Red Hat Datagrid 8 in the most straightforward way possible.
+These tutorials demonstrate how to use Red Hat Data Grid 8 features.
 
-In order to build the tutorials you will need
+## Prerequisites
+
+To build the tutorials you need the following:
 
 - JDK 8
 - Apache Maven 3.x
-- Some examples use the Red Hat Datagrid. 
-Download the lastest server version and run `bin/server.sh` from the installation directory
 
-You can compile and run each individual tutorial by changing to its folder
-and invoking:
+Additionally, some tutorials interact with Data Grid server, which you can download from the [Red Hat customer portal](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=data.grid&downloadType=distributions).
+
+## Running Tutorials
+
+1. Open a terminal window and change to the directory of the tutorial you want to run.
+2. Compile and run the tutorial as follows:
 
 ```bash
 mvn -s /path/to/maven-settings.xml clean package
 mvn -s /path/to/maven-settings.xml exec:exec
 ```
 
-Note: `maven-settings.xml` can be found in the root of the repository.
-
-Then, check the tutorial for a particular URL to interact with.
+Note that the `maven-settings.xml` file is available in the root directory of
+this repository.
