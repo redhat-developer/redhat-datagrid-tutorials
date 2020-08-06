@@ -3,12 +3,13 @@
 This tutorial will show you how to integrate Infinispan with link:http://projects.spring.io/spring-session[Spring Session].
 
 For more information about the Spring Session please refer to:
+
 * link:http://projects.spring.io/spring-session[Spring Session manual]
 * link:http://infinispan.org/docs/dev/user_guide/user_guide.html#externalizing_session_using_spring_session[Infinispan and Spring Session Users Guide]
 
 == Building instructions
 
-Invoke `mvn install spring-boot:run`
+Invoke `mvn -s ../../../maven-settings.xml package spring-boot:run`
 
 == Running the demo
 

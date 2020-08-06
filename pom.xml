@@ -64,7 +64,6 @@
        <module>replicated</module>
        <module>jcache</module>
        <module>functional</module>
-       <module>spark</module>
        <module>spring-integration/spring/simple-spring</module>
        <module>spring-integration/spring/spring-session</module>
        <module>spring-integration/spring-boot/embedded</module>
@@ -80,11 +79,7 @@
        <module>query</module>
        <module>listen</module>
        <module>remote-listen</module>
-       <module>kubernetes</module>
        <module>counter</module>
-       <module>hibernate-cache/local</module>
-       <module>hibernate-cache/wildfly-local</module>
-       <module>hibernate-cache/spring-local</module>
        <module>server-tasks</module>
        <module>multimap</module>
        <module>lock</module>
@@ -94,7 +89,6 @@
        <module>remote-multimap</module>
        <module>remote-query</module>
        <module>remote-per-cache</module>
-       <module>remote-junit5</module>
        <module>near-cache</module>
        <module>remote-continuous-query</module>
        <module>invalidation-mode</module>

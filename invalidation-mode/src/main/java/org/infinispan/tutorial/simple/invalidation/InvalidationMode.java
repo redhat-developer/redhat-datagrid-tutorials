@@ -12,7 +12,7 @@ import org.infinispan.manager.DefaultCacheManager;
 
 /**
  * Invalidation mode tutorial showcases how an infinispan cluster configured in invalidation mode behaves. Run at least
- * two times this main. An Infinispan cluster will be formed and a menu will be displayed.
+ * two times this main. An Red Hat Datagrid cluster will be formed and a menu will be displayed.
  * <p>
  * From the command line, you will be able to:
  *
