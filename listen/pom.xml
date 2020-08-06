@@ -4,7 +4,7 @@
     <artifactId>infinispan-simple-tutorials-listen</artifactId>
     <parent>
         <relativePath>../pom.xml</relativePath>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.CR2-redhat-00001</version>
         <groupId>org.infinispan.tutorial.simple</groupId>
         <artifactId>infinispan-simple-tutorials</artifactId>
     </parent>
@@ -28,7 +28,7 @@
                         <argument>-Djava.net.preferIPv4Stack=true</argument>
                         <argument>-Djava.util.logging.config.file=src/main/resources/logging.properties</argument>
                         <argument>-classpath</argument>
-                        <classpath />
+                        <classpath></classpath>
                         <argument>org.infinispan.tutorial.simple.listen.InfinispanListen</argument>
                     </arguments>
                 </configuration>
