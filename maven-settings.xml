@@ -39,11 +39,38 @@
             </pluginRepository>
          </pluginRepositories>
       </profile>
+      <profile>
+        <id>redhat-earlyaccess-repository</id>
+        <repositories>
+          <repository>
+            <id>redhat-earlyaccess-repository</id>
+            <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>false</enabled>
+            </snapshots>
+          </repository>
+        </repositories>
+        <pluginRepositories>
+          <pluginRepository>
+            <id>redhat-earlyaccess-repository</id>
+            <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>false</enabled>
+            </snapshots>
+          </pluginRepository>
+        </pluginRepositories>
+      </profile>
    </profiles>
 
    <activeProfiles>
       <activeProfile>redhat-public-repository</activeProfile>
+      <activeProfile>redhat-earlyaccess-repository</activeProfile>
    </activeProfiles>
 
 </settings>
-
