@@ -2,14 +2,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.infinispan.tutorial.simple</groupId>
     <artifactId>infinispan-simple-tutorials</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.CR2-redhat-00001</version>
     <packaging>pom</packaging>
 
     <name>Infinispan Tutorial: Simple tutorials</name>
 
     <properties>
-       <version.infinispan>12.1.2.Final</version.infinispan>
-       <version.protostream>4.4.0.Final</version.protostream>
+       <version.infinispan>12.1.3.Final-redhat-00001</version.infinispan>
+       <version.protostream>4.4.0.Final-redhat-00001</version.protostream>
        <version.spring.boot>2.4.3</version.spring.boot>
        <version.spring.session>2.4.2</version.spring.session>
        <version.micrometer.registry.prometheus>1.5.2</version.micrometer.registry.prometheus>
@@ -32,7 +32,7 @@
            <dependency>
                <groupId>javax.cache</groupId>
                <artifactId>cache-api</artifactId>
-               <version>1.1.0</version>
+               <version>1.1.0.redhat-1</version>
            </dependency>
         </dependencies>
     </dependencyManagement>
@@ -56,6 +56,22 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+      <plugin>
+        <groupId>org.commonjava.maven.plugins</groupId>
+        <artifactId>project-sources-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>project-sources-archive</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>archive</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
     </build>
 
     <modules>
@@ -94,3 +110,6 @@
        <module>invalidation-mode</module>
     </modules>
 </project>
+<!--
+Modified by POM Manipulation Extension for Maven 4.3 ( SHA: 64c39a8c )
+-->
