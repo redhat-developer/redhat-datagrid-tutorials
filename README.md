@@ -1,34 +1,15 @@
 # Red Hat Data Grid 8 Simple Tutorials  
 
-This is a collection of simple tutorials that explain how to use certain
-features of Red Hat Data Grid in the most straightforward way possible.
-
-## Red Hat Data Grid Server tutorials
-
-Several tutorials use remote caches and require a locally running Red Hat Data Grid Server.
-
-Download the server from the [Red Hat customer portal](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=data.grid&downloadType=distributions) and run
-from the downloaded files:
-
-```bash
-./bin/cli.sh user create admin -p "password"
-./bin/server.sh
-```
-*IMPORTANT:* 
-**Red Hat Data Grid Server requires authentication and authorization by default.** 
-Creating a user named `admin` gives you administrative access to Red Hat Data Grid Server.
-You can find more details about users and permissions in [Creating and Modifying Users](https://infinispan.org/docs/stable/titles/server/server.html#creating-users_quickstart)
+This is a collection of simple tutorials that explain how to use Data Grid in a straightforward way.
 
 ## Building Tutorials
 
-In order to build the tutorials you will need
+To build the tutorials you need:
 
 - JDK 8
 - Apache Maven 3.x
-- Some examples use the Red Hat Data Grid Server. Download the server and run `bin/server.sh` from the installation directory
 
-You can compile and run each individual tutorial by changing to its folder
-and invoking:
+Compile and run each tutorial by invoking the following commands from its folder:
 
 ```bash
 mvn -s /path/to/maven-settings.xml clean package
@@ -37,3 +18,18 @@ mvn -s /path/to/maven-settings.xml exec:exec
 
 Note that the `maven-settings.xml` file is available in the root directory of
 this repository.
+
+## Remote cache tutorials
+
+Tutorials that use remote caches require at least one Data Grid Server running locally.
+
+Download the server distribution from the [Red Hat customer portal](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=data.grid&downloadType=distributions) and run:
+
+```bash
+./bin/cli.sh user create admin -p "changeme"
+./bin/server.sh
+```
+
+**By default, Data Grid Server 8.2 requires authentication and requires users to have access permissions.** 
+Creating a user named `admin` gives you full access permissions for Data Grid Server.
+Find more details about setting up authorization roles in [Creating and Modifying Users](https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.2/html/data_grid_server_guide/start_server#creating-users_quickstart)
