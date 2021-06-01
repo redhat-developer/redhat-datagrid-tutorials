@@ -26,7 +26,7 @@ Tutorials that use remote caches require at least one Data Grid Server running l
 Download the server distribution from the [Red Hat customer portal](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=data.grid&downloadType=distributions) and run:
 
 ```bash
-./bin/cli.sh user create admin -p "changeme"
+./bin/cli.sh user create admin -p "password"
 ./bin/server.sh
 ```
 
