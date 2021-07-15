@@ -1,54 +1,35 @@
-# Infinispan Simple Tutorials  
+# Red Hat Data Grid 8 Simple Tutorials
 
-[![Build Status](https://travis-ci.org/infinispan/infinispan-simple-tutorials.svg?branch=master)](https://travis-ci.org/infinispan/infinispan-simple-tutorials)
+This is a collection of simple tutorials that explain how to use Data Grid in a straightforward way.
 
-This is a collection of simple tutorials that explain how to use certain
-features of Infinispan in the most straightforward way possible.
+## Building Tutorials
 
-## Infinispan Server tutorials
+To build the tutorials you need:
 
-Several tutorials use remote caches and require a locally running Infinispan Server.
+- JDK 8
+- Apache Maven 3.x
 
-To run the Server as a container image, visit the "Get Started" page 
-in the Infinispan Website.
-[Get Started with Infinispan](https://infinispan.org/get-started/)
+Compile and run each tutorial by invoking the following commands from its folder:
 
-You can always [download](https://infinispan.org/download/) the latest server distribution and run
-from the downloaded files:
+```bash
+mvn -s /path/to/maven-settings.xml clean package
+mvn -s /path/to/maven-settings.xml exec:exec
+```
+
+Note that the `maven-settings.xml` file is available in the root directory of
+this repository.
+
+## Remote cache tutorials
+
+Tutorials that use remote caches require at least one Data Grid Server running locally.
+
+Download the server distribution from the [Red Hat customer portal](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=data.grid&downloadType=distributions) and run:
 
 ```bash
 ./bin/cli.sh user create admin -p "password"
 ./bin/server.sh
 ```
-*IMPORTANT:* 
-**Infinispan Server requires authentication and authorization by default.** 
-Creating a user named `admin` gives you administrative access to Infinispan Server.
-You can find more details about users and permissions in [Creating and Modifying Users](https://infinispan.org/docs/stable/titles/server/server.html#creating-users_quickstart)
 
-## Building Tutorials
-
-In order to build the tutorials you will need
-
-- JDK 8
-- Apache Maven 3.x
-- Some examples use the Infinispan Server. Download the lastest server version and run `bin/server.sh` from the installation directory
-
-You can compile and run each individual tutorial by changing to its folder
-and invoking:
-
-```bash
-mvn clean package
-mvn exec:exec
-```
-
-Tutorials that involve deploying an archive to Wildfly are first deployed like this:
-
-```bash
-mvn clean package
-mvn wildfly:deploy
-```
-
-Then, check the tutorial for a particular URL to interact with.
-
-## To go further
-Check [Infinispan Demos](https://github.com/infinispan-demos/links) repository
+**By default, Data Grid Server 8.2 requires authentication and requires users to have access permissions.**
+Creating a user named `admin` gives you full access permissions for Data Grid Server.
+Find more details about setting up authorization roles in [Creating and Modifying Users](https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.2/html/data_grid_server_guide/start_server#creating-users_quickstart)

@@ -1,4 +1,4 @@
-= Infinispan Spring-Boot samples
+= Red Hat Data Grid Spring-Boot samples
 
 .Covers
 * [x] Embedded cache
@@ -9,39 +9,35 @@
 
 == Building instructions
 
-Invoke `mvn clean install` for the embedded or the remote example
+Invoke `mvn -s ../../maven-settings.xml clean install` for the embedded or the remote example
 
 == Running instructions
 
 === Embedded
 
-`mvn spring-boot:run`
+`mvn -s ../../../maven-settings.xml spring-boot:run`
 
 === Remote and Session
-
-Use docker or download and run the http://infinispan.org/download/[Infinispan Server]
-
-[source,bash]
-.Docker
-----
-docker run -it -p 11222:11222 -e USER="admin" -e PASS="password" quay.io/infinispan/server:12.1
-----
+With the downloaded server run:
 
 [source,bash]
 .Server
 ----
-cd UNZIP_SERVER_PATH/bin/
-./server.sh
-----
-`mvn spring-boot:run`
+# creates the username/password to interact with the server
+./bin/cli.sh user create "admin" -p "password"
 
-=== Create a cache called 'Sessions' for Remote session example
+# starts the server
+./bin/server.sh
+----
+
+Then execute `mvn -s ../../../maven-settings.xml spring-boot:run`.
+
+=== Create a cache called 'sessions' for Remote session example
 
 When the server is running, if cache called 'sessions' does not exist, then the application
 won't start.
 To create this cache, you can log into the http://localhost:11222[web console] and use the
 interface.
-You can also use the https://infinispan.org/docs/stable/titles/cli/cli.html[CLI].
 
 == Display actuator stats
 
@@ -65,6 +61,5 @@ Change the `YOUR_PATH` value to the folder you are running prometheus from.
 [source,bash]
 .Docker
 ----
-docker run -d --name=prometheus -p 9090:9090 -v YOUR_PATH/infinispan-spring-boot/infinispan-spring-boot-samples/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
+docker run -d --name=prometheus -p 9090:9090 -v $YOUR_PATH/infinispan-spring-boot/infinispan-spring-boot-samples/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
 ----
-
