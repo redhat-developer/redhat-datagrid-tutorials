@@ -1,3 +1,0 @@
-:tutorials: Code Tutorials
-:repository: https://github.com/redhat-developer/redhat-datagrid-tutorials/tree/RHDG_8.4.0
-:repository_ssh: git@github.com:redhat-developer/redhat-datagrid-tutorials.git
