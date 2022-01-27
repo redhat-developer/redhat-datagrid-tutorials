@@ -8,7 +8,7 @@ For more information about the Spring Session please refer to:
 
 == Building instructions
 
-Invoke `mvn install spring-boot:run`
+Invoke `mvn -s /path/to/maven-settings.xml install spring-boot:run`
 
 == Running the demo
 
