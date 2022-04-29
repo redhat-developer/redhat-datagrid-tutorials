@@ -6,5 +6,5 @@ without Spring-Boot
 
 == Building instructions
 
-Run `mvn package exec:exec@spring-caching` to test caching
-Run `mvn package exec:exec@spring-annotations` to test annotations
+Run `mvn -s /path/to/maven-settings.xml package exec:exec@spring-caching` to test caching
+Run `mvn -s /path/to/maven-settings.xml package exec:exec@spring-annotations` to test annotations
