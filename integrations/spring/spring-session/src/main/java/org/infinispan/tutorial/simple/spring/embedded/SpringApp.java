@@ -76,7 +76,7 @@ public class SpringApp {
    /**
     * To test the distributed cache sessions
     *
-    * 1) Run mvn clean install
+    * 1) Run mvn -s /path/to/maven-settings.xml clean install
     *
     * 2) Open two terminals and run
     *
