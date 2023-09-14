@@ -2,12 +2,12 @@
     <parent>
         <groupId>org.infinispan</groupId>
         <artifactId>infinispan-build-configuration-parent</artifactId>
-        <version>14.0.10.Final</version>
+        <version>14.0.17.Final-redhat-00001</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.infinispan.tutorial.simple</groupId>
     <artifactId>infinispan-simple-tutorials</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.CR2-redhat-00001</version>
     <packaging>pom</packaging>
 
     <name>Infinispan Tutorial: Simple tutorials</name>
@@ -24,7 +24,7 @@
            <dependency>
                <groupId>javax.cache</groupId>
                <artifactId>cache-api</artifactId>
-               <version>1.1.0</version>
+               <version>1.1.0.redhat-1</version>
            </dependency>
         </dependencies>
     </dependencyManagement>
@@ -49,6 +49,22 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+      <plugin>
+        <groupId>org.commonjava.maven.plugins</groupId>
+        <artifactId>project-sources-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>project-sources-archive</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>archive</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
     </build>
 
     <modules>
@@ -92,3 +108,6 @@
         <module>integrations/spring-boot/session-embedded</module>
     </modules>
 </project>
+<!--
+Modified by POM Manipulation Extension for Maven 4.15 ( SHA: 2abd964c )
+-->
