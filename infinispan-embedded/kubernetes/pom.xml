@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>infinispan-simple-tutorials-kubernetes</artifactId>
     <parent>
         <relativePath>../../pom.xml</relativePath>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.CR1-redhat-00001</version>
         <groupId>org.infinispan.tutorial.simple</groupId>
         <artifactId>infinispan-simple-tutorials</artifactId>
     </parent>
@@ -13,7 +12,7 @@
 
     <properties>
         <!-- The FQN of the docker image used by the application -->
-        <options.image>infinispan/${project.artifactId}:${project.version}</options.image>
+        <options.image>infinispan/${project.artifactId}:1.0.0.CR1-redhat-00001</options.image>
         <!-- The name of the headless service used by DNS_PING to determine cluster members -->
         <options.service>myservice</options.service>
         <!-- Kubernetes namespace which the application is deployed to -->
