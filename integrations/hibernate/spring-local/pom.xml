@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
 
    <groupId>org.infinispan.tutorial.simple</groupId>
    <name>Infinispan Simple Tutorials: Hibernate Cache Spring Local</name>
    <artifactId>infinispan-simple-tutorials-hibernate-cache-spring-local</artifactId>
-   <version>1.0.0-SNAPSHOT</version>
+   <version>1.0.0.CR1-redhat-00001</version>
 
    <parent>
       <relativePath>../../../pom.xml</relativePath>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0.CR1-redhat-00001</version>
       <groupId>org.infinispan.tutorial.simple</groupId>
       <artifactId>infinispan-simple-tutorials</artifactId>
    </parent>
@@ -83,19 +81,11 @@
    </build>
 
    <repositories>
-      <repository>
-         <id>spring-milestone</id>
-         <name>Spring Milestones</name>
-         <url>https://repo.spring.io/libs-milestone</url>
-      </repository>
+      
    </repositories>
 
    <pluginRepositories>
-      <pluginRepository>
-         <id>spring-milestone</id>
-         <name>Spring Milestones</name>
-         <url>https://repo.spring.io/libs-milestone</url>
-      </pluginRepository>
+      
    </pluginRepositories>
 
 </project>
