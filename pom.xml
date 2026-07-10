@@ -2,12 +2,12 @@
     <parent>
         <groupId>org.infinispan</groupId>
         <artifactId>infinispan-build-configuration-parent</artifactId>
-        <version>16.0.10</version>
+        <version>16.0.14.redhat-00001</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.infinispan.tutorial.simple</groupId>
     <artifactId>infinispan-simple-tutorials</artifactId>
-    <version>16.0.10</version>
+    <version>16.0.10.CR1-redhat-00001</version>
     <packaging>pom</packaging>
 
     <name>Infinispan Tutorial: Simple tutorials</name>
@@ -15,20 +15,12 @@
         <testcontainers.version>2.0.3</testcontainers.version>
         <assertj.version>3.27.7</assertj.version>
         <maven.compiler.source>17</maven.compiler.source>
+        <version.spring.boot4>4.0.6</version.spring.boot4>
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.release>17</maven.compiler.release>
     </properties>
     <repositories>
-        <repository>
-            <id>infinispanSnapshots</id>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <url>https://central.sonatype.com/repository/maven-snapshots</url>
-        </repository>
+        
     </repositories>
     <dependencyManagement>
         <dependencies>
@@ -42,7 +34,7 @@
            <dependency>
                <groupId>javax.cache</groupId>
                <artifactId>cache-api</artifactId>
-               <version>1.1.1</version>
+               <version>1.1.1.redhat-00001</version>
            </dependency>
             <dependency>
                 <groupId>org.junit</groupId>
@@ -98,6 +90,20 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+        <groupId>org.jboss.pnc</groupId>
+        <artifactId>project-sources-maven-plugin</artifactId>
+        <version>2.0</version>
+        <executions>
+          <execution>
+            <id>project-sources-archive</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>archive</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
         </plugins>
     </build>
 
@@ -154,3 +160,6 @@
         <module>infinispan-embedded/security</module>
     </modules>
 </project>
+<!--
+Modified by POM Manipulation Extension for Maven 5.3 ( SHA: 646d85d75ec25e8ec6ccddb3ca80878da6420bfc )
+-->
