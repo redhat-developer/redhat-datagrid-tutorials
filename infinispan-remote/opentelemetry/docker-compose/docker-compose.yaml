@@ -23,7 +23,7 @@ services:
       USER: admin
       PASS: password
     volumes:
-      - ./infinispan-tracing-configuration-server.yaml:/user-config/infinispan-tracing-configuration-server.yaml
+      - ./infinispan-tracing-configuration-server.yaml:/user-config/infinispan-tracing-configuration-server.yaml:Z
     command: -c infinispan.xml -c /user-config/infinispan-tracing-configuration-server.yaml
     networks:
       - mynetwork
