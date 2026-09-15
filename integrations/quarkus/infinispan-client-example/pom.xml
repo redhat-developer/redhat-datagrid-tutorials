@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.infinispan.tutorial.simple</groupId>
-    <version>16.0.10</version>
+    <version>16.0.10.CR1-redhat-00001</version>
     <artifactId>quarkus-infinispan-client-example</artifactId>
     <properties>
         <compiler-plugin.version>3.13.0</compiler-plugin.version>
@@ -80,6 +79,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <pluginManagement />
     </build>
     <profiles>
         <profile>
